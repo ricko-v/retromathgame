@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Mockup UI
+<div style='display:flex'>
+  <img src="https://raw.githubusercontent.com/ricko-v/retromathgame/master/Mockup/homescreen.jpg" width="300" height="600"/>
+  <img src="https://raw.githubusercontent.com/ricko-v/retromathgame/master/Mockup/main.jpeg" width="300" height="600"/>
+  <img src="https://raw.githubusercontent.com/ricko-v/retromathgame/master/Mockup/gameover.jpeg" width="300" height="600"/>
+</div>
