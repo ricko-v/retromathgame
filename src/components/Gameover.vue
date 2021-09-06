@@ -3,9 +3,6 @@
     <div class='container-fluid bg-dark d-flex justify-content-center p-0 m-0' style='min-height:100vh'>
         <div class='row'>
             <div style='width:400px;max-width:100vw' class='m-0 nes-container is-dark is-rounded pl-0 pr-0 pb-3'>
-                <!--div>
-                    <audio id='bgs' controls autoplay src='mixkit-arcade-fast-game-over-233.wav'></audio>
-                </div-->
                 <div class='pl-4'>
                     <small>Score: {{ score }}</small>
                     <br>
@@ -58,7 +55,6 @@ export default {
     },
     created() {
         function lod() {
-            
             var request = new XMLHttpRequest();
             request.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -79,15 +75,6 @@ export default {
         }
         document.title = "Retro Math Game - Gameover";
         document.getElementById('mixkit-arcade-fast-game-over-233.wav').play();
-        // let audiophile = new Audio();
-
-        // function bg(path) {
-        //     let link = path;
-        //     audiophile.src = link;
-        //     audiophile.load();
-        //     audiophile.play();
-        // }
-        // bg('mixkit-arcade-fast-game-over-233.wav');
     },
     methods: {
         home() {

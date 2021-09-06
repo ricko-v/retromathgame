@@ -4,7 +4,6 @@
         <div class='row'>
             <div id='tes' style='width:400px;max-width:100vw;height:100%' class="pb-3 m-0 nes-container is-dark is-rounded pl-0 pr-0">
                 <div>
-                    <!-- audio id='bgs' preload='auto' controls src='mixkit-retro-arcade-casino-notification-211.wav'></audio-->
                     <div class=''>
                         <small class='ml-4'>Score: {{ score }}</small>
                         <br>
@@ -128,11 +127,7 @@ export default {
             }
         },
         cekJawaban(q) {
-            //var awr = document.getElementById('bgs');
             if (this.jawaban == q) {
-                // awr.load();
-                // awr.play();
-                //this.musikBenar('mixkit-retro-arcade-casino-notification-211.wav')
                 document.getElementById('mixkit-retro-arcade-casino-notification-211.wav').play();
                 this.pilihan = [];
                 this.score++;
@@ -157,15 +152,6 @@ export default {
     mounted() {
         localStorage.timeout = false;
         document.title = "Retro Math Game - Play";
-        // let audiophile = new Audio();
-
-        // function bg(path) {
-        //     let link = path;
-        //     audiophile.src = link;
-        //     audiophile.load();
-        // }
-
-        // bg('../assets/mixkit-retro-arcade-casino-notification-211.wav');
         if (!localStorage.highscore) {
             localStorage.highscore = 0;
         }

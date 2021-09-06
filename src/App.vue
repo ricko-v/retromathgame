@@ -35,11 +35,9 @@ export default {
                     player.addEventListener('loaded', function () {
                         URL.revokeObjectURL(player.src);
                     });
-                    //player.play();
                     setTimeout(() => {
                         lod();
                     }, 30000);
-                    // Typical action to be performed when the document is ready:
                 }
             };
             request.open("GET", 'bg.mp3', true);
