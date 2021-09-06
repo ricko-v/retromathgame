@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import firebase from 'firebase/app'
-
 export default {
     data() {
         return {
@@ -50,41 +48,6 @@ export default {
         }
 
         lod();
-    },
-    created() {
-        // function lod(link) {
-        //     var request = new XMLHttpRequest();
-        //     request.onreadystatechange = function () {
-        //         if (this.readyState == 4 && this.status == 200) {
-        //             var url = URL.createObjectURL(request.response);
-        //             console.log(url);
-        //         }
-        //     };
-        //     request.open("GET", link, true);
-        //     request.responseType = 'blob';
-        //     request.send();
-        // }
-
-        // let arrLink = ['mixkit-arcade-fast-game-over-233.wav', 'mixkit-retro-arcade-casino-notification-211.wav'];
-
-        // for (let p in arrLink) {
-        //     lod(arrLink[p]);
-        // }
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyAV1soBIHraaascddoC7Vi0zkqXc5BssKQ",
-            authDomain: "retromathgame.firebaseapp.com",
-            projectId: "retromathgame",
-            storageBucket: "retromathgame.appspot.com",
-            messagingSenderId: "951815115833",
-            appId: "1:951815115833:web:383f32e10a5a78ec10a9e8",
-            measurementId: "G-3YTC09FCTX"
-        };
-
-        firebase.initializeApp(firebaseConfig);
-        firebase.database().ref('/users').on('value', (item) => {
-            console.log(item.val());
-        })
     }
 }
 </script>
