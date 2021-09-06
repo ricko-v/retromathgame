@@ -4,8 +4,6 @@ import './registerServiceWorker'
 import "nes.css/css/nes.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import router from './router'
-import 'firebase/database'
-import 'firebase/auth'
 
 Vue.config.productionTip = false
 
