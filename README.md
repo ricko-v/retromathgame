@@ -1,6 +1,9 @@
 # Retromathgame
 
 Live demo <a href="https://retromathgame.web.app">retromathgame</a>
+
+Built using Vuejs and integrated PWA
+
 ## Project setup
 ```
 npm install
